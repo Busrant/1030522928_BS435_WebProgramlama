@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KART OYUNU</title>
+    <link rel="stylesheet" href="card.css"/>
+    <script src="card.js"></script>
+</head>
+<body>
+
+<h2>KART BULMACA</h2>
+
+<p>
+    Bu oyunda 3 kapalı kart içindeki Astronotu bulman gerekmektedir. İlk tercihte bulamaz isen 2. seçim hakkı tanınacaktır.
+</p>
+
+<img id="img0" class="card" src="image/back.jfif" onclick="selectedCard(0)">
+<img id="img1" class="card" src="image/back.jfif" onclick="selectedCard(1)">
+<img id="img2" class="card" src="image/back.jfif" onclick="selectedCard(2)">
+
+<div class="message">
+    <p id="firstId">Astronot kartını bulmak için kartın üzerine tıklamalısın.</p>
+    <p id="winId" style="display: none">Kazandın!!! Tebrikler :)
+        Yeni bir oyun oynamak istersen <span onclick="newGame()" class="link">buraya</span> tıklayabilirsin.
+    </p>
+    <p id="loseId" style="display: none">Kaybettin :(
+        Yeni bir oyun oynamak istersen <span onclick="newGame()" class="link">buraya</span> tıklayabilirsin.
+    </p>
+</div>
+
+<script>
+    newGame();
+</script>
+
+</body>
+</html>
